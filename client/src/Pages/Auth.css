@@ -1,0 +1,50 @@
+.auth { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; }
+.auth-aside {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(500px 320px at 80% 20%, rgba(255,126,0,0.28), transparent 60%),
+    linear-gradient(150deg, var(--royal-ink), var(--royal-deep));
+  color: #fff;
+  display: flex; align-items: center; padding: 60px;
+}
+.auth-aside-grow {
+  background:
+    radial-gradient(500px 320px at 20% 80%, rgba(22,163,122,0.32), transparent 60%),
+    linear-gradient(150deg, var(--royal-deep), var(--royal-ink));
+}
+.auth-aside::after {
+  content: ""; position: absolute; width: 360px; height: 360px; border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.08); bottom: -120px; right: -100px;
+}
+.auth-aside-inner { position: relative; z-index: 1; max-width: 400px; }
+.auth-nut { font-size: 56px; display: block; margin-bottom: 24px; }
+.auth-favicon {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 24px;
+  filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.28));
+}
+.auth-aside h2 { color: #fff; font-size: 34px; margin-bottom: 16px; line-height: 1.2; }
+.auth-aside > .auth-aside-inner > p { color: rgba(255,255,255,0.82); font-size: 16px; margin-bottom: 30px; }
+.auth-points { display: flex; flex-direction: column; gap: 14px; }
+.auth-points li { display: flex; align-items: center; gap: 11px; font-size: 15px; color: rgba(255,255,255,0.92); }
+.auth-points svg { color: #5fd6ad; flex-shrink: 0; }
+
+.auth-main { display: flex; align-items: center; justify-content: center; padding: 50px 30px; background: var(--mist); }
+.auth-card { width: 100%; max-width: 420px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 44px 40px; box-shadow: var(--shadow-md); }
+.auth-logo img { height: 34px; margin-bottom: 28px; }
+.auth-card h1 { font-size: 30px; margin-bottom: 6px; }
+.auth-sub { color: var(--slate); margin-bottom: 28px; }
+.auth-card form { margin-bottom: 22px; }
+.auth-card .btn { margin-top: 8px; }
+.auth-switch { text-align: center; font-size: 14.5px; color: var(--slate); }
+.auth-switch a { color: var(--royal); font-weight: 600; }
+.auth-switch a:hover { color: var(--amber); }
+
+@media (max-width: 880px) {
+  .auth { grid-template-columns: 1fr; }
+  .auth-aside { display: none; }
+  .auth-main { min-height: 100vh; }
+}

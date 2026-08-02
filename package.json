@@ -1,0 +1,17 @@
+{
+  "name": "nut-microfinance-bank",
+  "version": "1.0.0",
+  "description": "Full-stack MERN website for Nut Treasury Services",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently -n SERVER,CLIENT -c blue,magenta \"npm run server\" \"npm run client\"",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

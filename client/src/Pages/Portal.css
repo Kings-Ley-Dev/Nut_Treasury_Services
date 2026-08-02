@@ -1,0 +1,18 @@
+.portal-shield {
+  width: 64px; height: 64px; border-radius: 18px;
+  display: grid; place-items: center; margin-bottom: 22px;
+  background: rgba(255,255,255,0.12); color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.portal-tag {
+  display: inline-block; font-family: "Sora", sans-serif; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; color: #fff;
+  background: var(--royal-ink); padding: 5px 12px; border-radius: var(--radius-pill); margin-bottom: 16px;
+}
+.portal-tag-emp { background: var(--sprout); }
+.linklike {
+  background: none; border: none; padding: 0; color: var(--royal); font-weight: 600;
+  font-family: inherit; font-size: inherit; cursor: pointer;
+}
+.linklike:hover { color: var(--amber); }
+.portal-admin .auth-aside { background: linear-gradient(150deg, #0b1b33, #0e2f6b); }
