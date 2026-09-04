@@ -1,11 +1,11 @@
 # 🌰 Nut Treasury Services - Full-Stack MERN Website
 
 > **Small seeds, mighty growth.**
-> A complete MERN (MongoDB · Express · React · Node) banking website for **Nut Treasury Services**, refactored and rebuilt from a frontend-only template into a production-ready full-stack application.
+> A complete MERN (MongoDB · Express · React · Node) banking website for **Nut Treasury Services**, a production-ready full-stack application.
 
 ---
 
-## ✨ What's inside
+## What's inside
 
 A modern, responsive marketing + customer site with a working backend:
 
@@ -32,7 +32,7 @@ A modern, responsive marketing + customer site with a working backend:
 
 ---
 
-## 🗂 Project structure
+## Project structure
 
 ```
 nut-microfinance-bank/
@@ -64,7 +64,7 @@ nut-microfinance-bank/
 
 ---
 
-## 🚀 Getting started
+## Getting started
 
 ### Prerequisites
 - **Node.js** 18+ and npm
@@ -113,7 +113,7 @@ npm run build      # outputs client/dist
 
 ---
 
-## 🔌 API reference
+## API reference
 
 Base URL: `/api`
 
@@ -141,22 +141,9 @@ Base URL: `/api`
 
 ---
 
-## 🔐 Security & quality notes
-- Passwords hashed with **bcrypt**; auth via **JWT**.
-- **Helmet**, **CORS** (locked to `CLIENT_URL`), **rate limiting** and centralized error handling.
-- Server-side validation with **express-validator** on every write endpoint.
-- The frontend never stores plaintext credentials; the JWT lives in `localStorage` and is auto-cleared on 401.
-
----
-
-## ✏️ Customising content
-Almost all site copy (bank name, phone, address, products, FAQs, testimonials, stats) lives in **`client/src/data/content.js`** - edit there to update the whole site at once.
-
----
-
-## 📦 Tech stack
+## Tech stack
 React 18 · React Router 6 · Vite 6 · Axios · Express 4 · Mongoose 8 · JWT · bcrypt · Helmet.
 
 ---
 
-© Nut Treasury Services. Built as a full-stack MERN reference project.
+© Nut Treasury Services. Built as a full-stack MERN project.
