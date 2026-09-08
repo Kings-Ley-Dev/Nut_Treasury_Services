@@ -1,6 +1,5 @@
-# 🌰 Nut Treasury Services - Full-Stack MERN Website
+# Nut Treasury Services
 
-> **Small seeds, mighty growth.**
 > A complete MERN (MongoDB · Express · React · Node) banking website for **Nut Treasury Services**, a production-ready full-stack application.
 
 ---
@@ -146,4 +145,4 @@ React 18 · React Router 6 · Vite 6 · Axios · Express 4 · Mongoose 8 · JWT 
 
 ---
 
-© Nut Treasury Services. Built as a full-stack MERN project.
+© Nut Treasury Services. Built by Kingsley Quarshie.
