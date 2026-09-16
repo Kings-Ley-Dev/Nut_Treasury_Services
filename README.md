@@ -1,6 +1,6 @@
 # Nut Treasury Services
 
-> A complete MERN (MongoDB · Express · React · Node) banking website for **Nut Treasury Services**, a production-ready full-stack application.
+> A complete MERN (MongoDB · Express · React · Node) banking website for **Nut Treasury Services**, a production-ready full-stack application. 
 
 ---
 
