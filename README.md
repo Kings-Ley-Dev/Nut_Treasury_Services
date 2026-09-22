@@ -4,7 +4,7 @@
 
 ---
 
-## What's inside
+## What's inside?
 
 A modern, responsive marketing + customer site with a working backend:
 
