@@ -2,7 +2,7 @@ import AuditLog from "../models/AuditLog.js";
 import Notification from "../models/Notification.js";
 
 /** Record an admin/employee action to the audit trail. */
-export const audit = async (actor, action, target = "", meta = {}, ip = "") => {
+export const audit = async (actor, action, target = "", meta = {}, ip = "") => {   
   try {
     await AuditLog.create({
       actor: actor?._id,
