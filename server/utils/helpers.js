@@ -7,9 +7,9 @@ export const generateToken = (id) =>
     expiresIn: process.env.JWT_EXPIRES_IN || "7d",
   });
 
-/** Wrap async controllers so thrown errors reach the error handler. */
-export const asyncHandler = (fn) => (req, res, next) =>
-  Promise.resolve(fn(req, res, next)).catch(next);
+/** Wrap async controllers so thrown errors reach the error handler. */   
+export const asyncHandler = (fn) => (req, res, next) =>  
+  Promise.resolve(fn(req, res, next)).catch(next);  
 
 /** Collect express-validator errors; returns true if a response was sent. */
 export const handleValidation = (req, res) => {
