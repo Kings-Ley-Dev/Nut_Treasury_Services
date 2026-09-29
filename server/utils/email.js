@@ -2,12 +2,12 @@
  * Lightweight email helper. Uses nodemailer only if SMTP is configured via env
  * (SMTP_HOST, SMTP_USER, SMTP_PASS). If not configured, it logs and no-ops so
  * the app still works in development. Notifications to the dashboard are always
- * sent regardless, so email is an optional extra channel.
+ * sent regardless, so email is an optional extra channel.  
  */
 export const sendEmail = async ({ to, subject, text }) => {
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, EMAIL_FROM } = process.env;
+  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, EMAIL_FROM } = process.env;  
   if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
-    console.log(`[email skipped — no SMTP configured] to=${to} subject="${subject}"`);
+    console.log(`[email skipped — no SMTP configured] to=${to} subject="${subject}"`);  
     return { sent: false, reason: "smtp-not-configured" };
   }
   try {
