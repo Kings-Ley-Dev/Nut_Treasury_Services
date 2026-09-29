@@ -4,13 +4,13 @@ import connectDB from "../config/db.js";
 import User from "../models/User.js";
 
 /**
- * Seeds an admin account from the ADMIN_* environment variables.
- * Run with:  npm run seed   (from the /server folder)
+ * Seeds an admin account from the ADMIN_* environment variables.  
+ * Run with:  npm run seed   (from the /server folder)  
  */
 const seed = async () => {
   await connectDB();
   try {
-    const email = (process.env.ADMIN_EMAIL || "admin@nutbank.com").toLowerCase();
+    const email = (process.env.ADMIN_EMAIL || "admin@nutbank.com").toLowerCase();  
     const existing = await User.findOne({ email });
 
     if (existing) {
