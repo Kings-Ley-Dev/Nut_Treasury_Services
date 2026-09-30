@@ -5,7 +5,7 @@ import {
   createLoanApplication,  
   getMyLoanApplications,
   getAllLoanApplications,
-  updateLoanStatus,
+  updateLoanStatus,  
 } from "../controllers/loanController.js";
 import { protect, authorize } from "../middleware/auth.js";
 import { optionalAuth } from "../middleware/optionalAuth.js";
