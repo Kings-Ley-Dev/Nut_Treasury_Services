@@ -1,9 +1,9 @@
 import express from "express";
 import { body } from "express-validator";
 import {
-  createContactMessage,
+  createContactMessage, 
   getContactMessages,
-  updateContactStatus,
+  updateContactStatus,  
   subscribeNewsletter,
 } from "../controllers/contactController.js";
 import { protect, authorize } from "../middleware/auth.js";
