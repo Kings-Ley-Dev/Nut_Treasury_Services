@@ -1,10 +1,10 @@
 import express from "express";
-import { body } from "express-validator";
+import { body } from "express-validator"; 
 import {
   register,
   adminRegister,
-  employeeRegister,
-  checkInvite,
+  employeeRegister,  
+  checkInvite, 
   login,
   getMe,
 } from "../controllers/authController.js";
