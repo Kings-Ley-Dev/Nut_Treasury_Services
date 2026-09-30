@@ -1,8 +1,8 @@
 import express from "express";
-import { protect, authorize } from "../middleware/auth.js";
-import { allLoans, reviewLoan, decideLoan, disburseLoan } from "../controllers/loanFlowController.js";
+import { protect, authorize } from "../middleware/auth.js";  
+import { allLoans, reviewLoan, decideLoan, disburseLoan } from "../controllers/loanFlowController.js"; 
 import { allTickets, assignTicket, updateTicketStatus, replyTicket } from "../controllers/ticketController.js";
-import { customerLookup } from "../controllers/adminController.js";
+import { customerLookup } from "../controllers/adminController.js";  
 import {
   allDeposits, sendDepositDetails, confirmDeposit, rejectDeposit,
   allWithdrawals, approveWithdrawal, rejectWithdrawal,
