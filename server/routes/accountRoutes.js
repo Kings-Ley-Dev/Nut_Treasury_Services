@@ -1,15 +1,15 @@
 import express from "express";
-import { body } from "express-validator";
+import { body } from "express-validator";  
 import {
   createAccountApplication,
-  getMyAccountApplications,
+  getMyAccountApplications,  
   getAllAccountApplications,
   updateAccountStatus,
-} from "../controllers/accountController.js";
+} from "../controllers/accountController.js";  
 import { protect, authorize } from "../middleware/auth.js";
 import { optionalAuth } from "../middleware/optionalAuth.js";
 
-const router = express.Router();
+const router = express.Router();  
 
 const validateApplication = [
   body("fullName").trim().notEmpty().withMessage("Full name is required"),
