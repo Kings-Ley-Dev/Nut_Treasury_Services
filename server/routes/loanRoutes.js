@@ -2,7 +2,7 @@ import express from "express";
 import { body } from "express-validator";
 import {
   calculateLoan,
-  createLoanApplication,
+  createLoanApplication,  
   getMyLoanApplications,
   getAllLoanApplications,
   updateLoanStatus,
