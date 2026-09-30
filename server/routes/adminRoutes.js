@@ -10,9 +10,9 @@ const router = express.Router();
 router.use(protect, authorize("admin"));
 
 router.get("/users", listUsers);
-router.patch("/users/:id/status", updateUserStatus);
-router.patch("/users/:id/kyc", verifyKyc);
-router.delete("/users/:id", deleteUser);
+router.patch("/users/:id/status", updateUserStatus);  
+router.patch("/users/:id/kyc", verifyKyc);  
+router.delete("/users/:id", deleteUser);  
 
 router.get("/invites", listInvites);
 router.post("/invites", createInvite);
